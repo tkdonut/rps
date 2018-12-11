@@ -15,6 +15,6 @@ get '/rps/:hand1/:hand2' do
   erb(result[:outcome].to_sym)
 end
 
-get '/help/' do
+get '/' do
   erb(:help)
 end

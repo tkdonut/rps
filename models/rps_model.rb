@@ -11,13 +11,13 @@ class RPSGame
     }
 
     if hand1 == hand2
-      return "It's a Draw!"
+      return {outcome: 'draw'}
     elsif win[hand1] == hand2
-      return "Player 1 wins with #{hand1}!"
+      return {outcome: 'win', victor: 'Player 1', winninghand: hand1}
     elsif win[hand2] == hand1
-      return "Player 2 wins with #{hand2}!"
+      return {outcome: 'win', victor: 'Player 2', winninghand: hand2}
     else
-      return "uh oh! Looks like you didn't enter valid inputs!"
+      return {outcome: 'error'}
     end
   end
 

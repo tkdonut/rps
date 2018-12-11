@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+
+html {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Gochi Hand', cursive;
+  text-size: 1em;
+}
+
+.flex-aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.rps_result {
+text-align: center;
+width:75%;
+font-size: 4em;
+}
+
+.rps_result img {
+width: 30%;
+}
+
+#flipme {
+transform: scaleX(-1);
+filter: FlipH;
+}
+
+#instructionbutt{ 
+display : float;
+position : absolute;
+width : 3%;
+margin-left: 3%;
+margin-top: 3%;
+}
+
+.instructions {
+width: 75%;
+}
+
+.instructions h1, h2, h3 {
+text-align: center;
+}
+
+#rules {
+text-decoration: underline;
+}
+
+#author{
+text-align: right;
+}
+
+#guide{
+margin-top: 50px;
+}

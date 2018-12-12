@@ -1,47 +1,43 @@
-<div class = instructions>
-<h2 id = 'rules'>The rules of rock, paper, scissors are found in this poem:</h2>
-<p>
-“Mine, said the stone,
-mine is the hour.
-I crush the scissors,
-such is my power.
-Stronger than wishes,
-my power, alone.
-</p><p>
-Mine, said the paper,
-mine are the words
-that smother the stone
-with imagined birds,
-reams of them, flown
-from the mind of the shaper.
-</p><p>
-Mine, said the scissors,
-mine all the knives
-gashing through paper’s
-ethereal lives;
-nothing’s so proper
-as tattering wishes.
-</p><p>
-As stone crushes scissors,
-as paper snuffs stone
-and scissors cut paper,
-all end alone.
-So heap up your paper
-and scissor your wishes
-and uproot the stone
-from the top of the hill.
-They all end alone
-as you will, you will.” 
-</p>
-<h3 id = 'author'> --David Mason </h3>
-
-<div id='guide'>
-<h2> To play this game, paste the following into the address bar </h2
->
-<h1>http://localhost:4567/rps/<span style ='color: red'>rock</span>/<span style = 'color: blue'>rock</span>
-<br>
-<h3> 
-with the <span style ='color: red'>rock</span> value on the left replaced with either rock / paper / scissors for player one, and vice versa for player two.
-</h3>
-</div>
-</div>
+<style>
+img{
+    padding:5px;
+    color:#222;
+    margin: 10px;
+    vertical-align:middle;
+}​
+</style>
+<div style = 'text-align: center;'>
+<h1 style = 'font-size: 4em;'>codeclan rochambeau</h1><br>
+<h2> Rock beats scissors, paper beats rock, scissors beat paper </h2><br>
+<form action = '/rps/' >Player 1 :
+  <input type="radio" id='rock' name="player1" value="rock" checked>
+    <label for="rock">
+      <img src= '/assets/rock.svg' width = '50px;'>
+    </label>
+  <input type="radio" id='paper' name="player1" value="paper">
+    <label for="paper">
+      <img src= '/assets/paper.svg' width = '50px;'>
+    </label>
+  <input type="radio" id='scissors' name="player1" value="scissors">
+  <label for="scissors">
+      <img src= '/assets/scissors.svg' width = '50px;'>
+  </label>
+  <br>
+  <div style = 'padding-top: 50px;'> Player 2:
+  <input type="radio" id='rock2' name="player2" value="rock">
+    <label for="rock2">
+      <img src= '/assets/rock.svg' width = '50px;'>
+    </label>
+  <input type="radio" id='paper2' name="player2" value="paper">
+    <label for="paper2">
+      <img src= '/assets/paper.svg' width = '50px;'>
+    </label>
+  <input type="radio" id='scissors2' name="player2" value="scissors">
+    <label for="scissors2">
+      <img src= '/assets/scissors.svg' width = '50px;'>
+    </label>
+    <br>
+  <input type="submit" value="Submit">
+  </div>
+</form>
+</h1>
